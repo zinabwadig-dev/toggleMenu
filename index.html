@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="menuBtn">☰</button>
+<div id="menu">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Gallery</a>
+  <a href="#">Contact</a>
+</div>
+
+
+
+<style>
+  #menu {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  background: #eee;
+  padding: 20px;
+  width: 80px;
+  height: 150px;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+#menu.active {
+  display: flex;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+#menuBtn {
+  background-color: #369017;
+}
+</style>
+
+<script src="script.js"></script>
+</body>
+</html>
